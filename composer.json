@@ -1,0 +1,46 @@
+{
+  "name": "bytic/event-discovery",
+  "type": "library",
+  "license": "MIT",
+  "description": "event dispatcher discovery for bytic library",
+  "keywords": [],
+  "homepage": "https://github.com/bytic/event-discovery",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bytic\\EventDiscovery\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bytic\\EventDiscovery\\Tests\\": "tests/src",
+      "Bytic\\EventDiscovery\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "require": {
+    "php": "^7.2|^8.0",
+    "fig/event-dispatcher-util": "^1.0",
+    "psr/event-dispatcher": "^1.0 || ^2.0"
+  },
+  "require-dev": {
+    "bytic/phpqatools": "^1.0",
+    "bytic/event-dispatcher": "^0.9|^1.0"
+  },
+  "suggest": {
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true,
+      "ergebnis/composer-normalize": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "bytic/phpqatools": true
+    }
+  }
+}
