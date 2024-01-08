@@ -45,7 +45,7 @@ class RaiseEvent
      */
     protected static function instantiateEvent($event, $params)
     {
-        return is_object($event) ? $event : new $event($params);
+        return is_object($event) ? $event : new $event(...$params);
     }
 
     /**
